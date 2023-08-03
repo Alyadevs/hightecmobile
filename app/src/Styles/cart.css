@@ -1,0 +1,128 @@
+.pageprod {
+   
+    display: flex;
+      /* background-color: #f3ebeb;   */
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 15vh;
+    position: relative;
+    align-items: center;
+}
+.product {
+    position: absolute;
+    opacity: 0.1;
+    top: -20%;
+    left: 20%;
+}
+
+.productdiv {
+    margin-top: -px;
+    width: 70%;
+    height: 70vh;
+}
+.for_navigation {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+.leftarrowpiezza {
+    cursor: pointer;
+}
+
+.rightarrowpiezza {
+    cursor: pointer;
+}
+.rightarrowcinema {
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 30%;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftarrowcinema {
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 30%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Search {
+    width: 500px;
+    border: 2px solid #011d46;
+    height: 45px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Search>input {
+    outline: none;
+    border: none;
+    height: 30px;
+    width: 60%;
+    color: #18162b;
+    padding-left: 15px;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-family: Reboto, sans-serif;
+}
+
+.Search>button {
+    background: linear-gradient(to right, #011d46, 0%, #011d46 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #18162b;
+    padding: 6px 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style for the cart item container */
+  .cart-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the product image */
+  .cart-item img {
+    width: 100px; /* Adjust the image width as needed */
+    height: auto;
+    margin-right: 10px;
+    border-radius: 4px;
+  }
+  
+  /* Style for the product description */
+  .cart-item-description {
+    flex: 1;
+  }
+  
+  .cart-item-description h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .cart-item-description p {
+    font-size: 14px;
+    color: #555;
+  }
