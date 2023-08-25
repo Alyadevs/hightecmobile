@@ -13,7 +13,7 @@ var productSchema = new mongoose.Schema({
         required:true,
         unique:true,
     },
-    image:{
+    imagePath:{
         type:String,
         required:true,
         unique:true,

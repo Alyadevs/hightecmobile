@@ -1,18 +1,20 @@
 // src/Home.js
 import React from 'react';
 import { Layout } from 'antd';
+import Login from './Login';
 
 const { Header, Content, Footer } = Layout;
 
 const Home = () => {
   return (
     <Layout>
-      <Header className="py-4 text-white bg-blue-800">
-        <div className="container mx-auto">
+      
+        {/* <div className="container mx-auto">
+        <img src={'src/assets/logo.png'} alt="HighTec Products" className="w-full rounded-md shadow-lg" width={50} height={50}/>
           <h1 className="text-4xl font-bold">HighTec</h1>
           <p className="text-xl">Leading the Future of Technology</p>
-        </div>
-      </Header>
+        </div> */}
+{/*      
 
       <Content className="container py-8 mx-auto">
         <section className="grid grid-cols-1 gap-4 md:grid-cols-2">
@@ -27,16 +29,12 @@ const Home = () => {
           </div>
           <div>
             {/* Insert high-tech-related image here */}
-            <img src="placeholder_image.jpg" alt="HighTec Products" className="w-full rounded-md shadow-lg" />
-          </div>
+          
+          {/* </div>
         </section>
-      </Content>
-
-      <Footer className="py-4 text-white bg-gray-900">
-        <div className="container mx-auto text-center">
-          <p>&copy; 2023 HighTec. All rights reserved.</p>
-        </div>
-      </Footer>
+      </Content> */}
+<Login/>
+      
     </Layout>
   );
 };

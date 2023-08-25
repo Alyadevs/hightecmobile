@@ -1,5 +1,6 @@
 // src/Sidebar.js
 import React from 'react';
+
 import { Layout, Menu } from 'antd';
 import {
   HomeOutlined,
@@ -21,23 +22,24 @@ const Sidebar = () => {
     >
       <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
         <Menu.Item key="1" icon={<HomeOutlined />}>
-          Home
+         <a href="/">Home</a> 
         </Menu.Item>
         <Menu.Item key="2" icon={<ShoppingOutlined />}>
-         Product
+         <a href="/product">Product</a>
         </Menu.Item>
         <Menu.Item key="3" icon={<UserOutlined />}>
-          About
+          <a href="/about">About</a>
         </Menu.Item>
         <Menu.Item key="4" icon={<AppstoreOutlined />}>
-          Services
+          <a href="/services">Services</a>
         </Menu.Item>
         <Menu.Item key="5" icon={<PhoneOutlined />}>
           Contact
         </Menu.Item>
         <Menu.Item key="6" icon={<LogoutOutlined/>}>
-          LogOut
+         <a href="/Login">LogOut</a> 
         </Menu.Item>
+       
 
       </Menu>
     </Sider>

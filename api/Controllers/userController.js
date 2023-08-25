@@ -2,7 +2,7 @@ const User =require('../Models/userModel')
 
 const registerUser = async (req, res) => {
   try {
-    const { firstName, lastName, image, email, password } = req.body;
+    const { firstName, lastName, email, password, isAdmin } = req.body; 
     const existingUser = await User.findOne({ email });
     if (existingUser) {
       return res.status(400).json({ message: "User already exists" });
@@ -10,9 +10,9 @@ const registerUser = async (req, res) => {
     const user = new User({
       firstName,
       lastName,
-      image,
       email,
       password,
+      isAdmin, 
     });
     await user.save();
 
@@ -22,6 +22,7 @@ const registerUser = async (req, res) => {
     res.status(500).json({ message: "Internal server error" });
   }
 };
+
 const loginUser = async (req, res) => {
   try {
     const { email, password } = req.body;

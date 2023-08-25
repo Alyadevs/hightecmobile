@@ -1,4 +1,4 @@
-const User = require("../Models/user");
+const User = require("../Models/userModel");
 const authenticateUser = async (req, res, next) => {
   const userId = req.headers["x-user-id"];
 
@@ -21,4 +21,5 @@ const authenticateUser = async (req, res, next) => {
     res.status(500).json({ message: "Internal server error" });
   }
 };
+
 module.exports = authenticateUser;

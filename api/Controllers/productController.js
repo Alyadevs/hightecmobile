@@ -41,12 +41,12 @@ const createProduct = async (req, res) => {
     const {
       name,
       description,
-      image
+      imagePath
     } = req.body;
     const newProduct = new Product({
         name,
         description,
-        image
+        imagePath
     });
     await newProduct.save();
     res.status(201).json({
@@ -64,14 +64,14 @@ const createProduct = async (req, res) => {
     const {
       name,
       description,
-      image
+      imagePath
     } = req.body;
     const updatedProduct = await Product.findByIdAndUpdate(
       req.params.id,
       {
         name,
           description,
-               image
+               imagePath
        
       },
       { new: true }
