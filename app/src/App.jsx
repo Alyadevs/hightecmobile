@@ -17,6 +17,7 @@ import EditProduct from './Pages/EditProduct';
 import AddProduct from './Pages/AddProduct';
 import Product from './Pages/Product'
 import SignUp from './Pages/SignUp';
+import Contact from './Pages/Contact';
 
 const { Content } = Layout;
 
@@ -41,6 +42,7 @@ const App = ({ children }) => {
         <Route exact path="/EditProduct/:id" element={<EditProduct/>} />
         <Route exact path="/AddProduct" element={<AddProduct/>} />
         <Route exact path="/product" element={<Product/>} />
+        <Route exact path="/contact" element={<Contact/>} />
         
 
         </Routes>

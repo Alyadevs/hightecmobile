@@ -53,13 +53,13 @@ function EditProduct() {
 
   return (
     <div className="edit">
-      <div className="w-full p-6 bg-white rounded-lg shadow-lg sm:max-w-md">
-        <h1 className="mb-6 text-2xl font-bold text-center text-gray-900">Edit Product</h1>
+     
+        <h1 style={{ fontFamily: 'bold'}} >Edit Product</h1>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-800">
+            <label htmlFor="name" >
               Name:
-            </label>
+            </label><br/>
             <input
               type="text"
               id="name"
@@ -70,9 +70,9 @@ function EditProduct() {
             />
           </div>
           <div>
-            <label htmlFor="description" className="block text-sm font-medium text-gray-800">
+            <label htmlFor="description" >
               Description:
-            </label>
+            </label><br/>
             <input
               type="text"
               id="description"
@@ -83,11 +83,11 @@ function EditProduct() {
             />
           </div>
           <div>
-            <label htmlFor="imagePath" className="block text-sm font-medium text-gray-800">
+            <label htmlFor="imagePath" >
               Image URL:
-            </label>
+            </label><br/>
             <input
-              type="text"
+              type="file"
               id="imagePath"
               value={imagePath}
               accept="image/png, image/jpg, image/gif, image/jpeg,image/avif"
@@ -98,13 +98,13 @@ function EditProduct() {
           </div>
           <button
             type="submit"
-            className="text-white bg-indigo-900 btn hover:bg-indigo-800"
+          className='btn'
           >
             Update
           </button>
         </form>
       </div>
-    </div>
+  
   );
 }
 

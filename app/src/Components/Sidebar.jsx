@@ -34,7 +34,7 @@ const Sidebar = () => {
           <a href="/services">Services</a>
         </Menu.Item>
         <Menu.Item key="5" icon={<PhoneOutlined />}>
-          Contact
+         <a href="/contact">Contact</a> 
         </Menu.Item>
         <Menu.Item key="6" icon={<LogoutOutlined/>}>
          <a href="/Login">LogOut</a> 
